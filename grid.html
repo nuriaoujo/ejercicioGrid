@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 1</title>
+
+        <link rel="stylesheet" href="gridCSS.css">
+        <script src="gridJS.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Ejercicio de grid</h1>
+        </header>
+        <main>
+            <section>
+                <div id="marco"></div>
+            </section>
+            <section>
+                <div>
+                    <label for="fila">Inserta el primer valor (fila):</label>
+                    <input type="number" id="fila" name="fila" required size="10" />
+                </div>
+                <br>
+                <div>
+                    <label for="columna">Inserta el segundo valor (columna):</label>
+                    <input type="number" id="columna" name="columna" required size="10" />
+                </div>
+
+                <button onclick="calcularGrid()">Realizar operación</button>
+
+                <p id="alto"></p>
+                <p id="ancho"></p>
+            </section>
+        </main>
+    </body>
+</html>
